@@ -4,7 +4,7 @@ def count_batteries_by_health(present_capacities):
         "exchange": 0,
         "failed": 0
       }
-  #classifying soh
+  #calculating and classifying soh
     for capacity_ in present_capacities:
         soh = 100*(capacity_/120)
         if soh >= 80:
